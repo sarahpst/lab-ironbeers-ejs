@@ -1,0 +1,10 @@
+<h1>Random-beers</h1>
+
+<% responseFromAPI.forEach(element => { %>
+<img src="<%- element.image_url %>" />
+<p><%- element.name %></p>
+<p><%- element.description %></p>
+<p><%- element.tagline %></p>
+<p><%- element.food_pairing %></p>
+<p><%- element.brewers_tips %></p>
+<% }) %>
